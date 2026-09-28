@@ -4,7 +4,7 @@
 
 Originally built to parse through noisy environmental sequences to find protist hosts, Barrnapster automates the tedious transitions between standard bioinformatics tools. It predicts rRNA genes, extracts the 18S sequences, classifies them against the PR2 database, filters out bacterial and mitochondrial misassignments, generates publication-ready diversity visualizations, and retrieves the full-length original contigs for your target eukaryotes.
 
-## ⚙️ How It Works
+##  How It Works
 
 Barrnapster executes a 6-step pipeline in a single command:
 
@@ -17,7 +17,7 @@ Barrnapster executes a 6-step pipeline in a single command:
 
 ---
 
-## 🛠️ Installation & Dependencies
+##  Installation & Dependencies
 
 Barrnapster relies on a mix of command-line bioinformatics utilities and Python data science libraries. The easiest and most reproducible way to install these dependencies is via Conda/Mamba.
 
@@ -41,3 +41,15 @@ After creating the environment, activate it.
 ```bash
 conda activate barrnapster
 ```
+### 2. Setting up the PR2 database
+You will need to install the PR2 database from their website [here](https://github.com/pr2database/pr2database/releases/download/v5.1.1/pr2_version_5.1.1_SSU_UTAX.fasta.gz).
+After installing, unzip the database.
+
+### 3. Running the pipeline
+The input for the tool is a metagenome assembly (a FASTA file with contigs). 
+```bash
+python barrnapster.py -a [assembly.fasta] -d [path/to/PR2_database] -o [output_folder]
+```
+
+
+
