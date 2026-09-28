@@ -1,4 +1,5 @@
 # Barrnapster
+<img width="2816" height="1536" alt="barrnapster" src="https://github.com/user-attachments/assets/fdef7aae-fa67-46f6-b3d4-7bc70fbc3f5b" />
 
 **Barrnapster** is an end-to-end pipeline designed to streamline the extraction, classification, and visualization of 18S rRNA eukaryotic sequences from long-read metagenomic assemblies. 
 
